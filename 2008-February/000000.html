@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Openviewer-users] opensim install trouble on feisty
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/openviewer-users/2008-February/index.html" >
+   <LINK REL="made" HREF="mailto:openviewer-users%40lists.berlios.de?Subject=Re%3A%20%5BOpenviewer-users%5D%20opensim%20install%20trouble%20on%20feisty&In-Reply-To=%3C47AC5E4F.80105%40gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Openviewer-users] opensim install trouble on feisty</H1>
+    <B>Ale Fernandez</B> 
+    <A HREF="mailto:openviewer-users%40lists.berlios.de?Subject=Re%3A%20%5BOpenviewer-users%5D%20opensim%20install%20trouble%20on%20feisty&In-Reply-To=%3C47AC5E4F.80105%40gmail.com%3E"
+       TITLE="[Openviewer-users] opensim install trouble on feisty">skoria at gmail.com
+       </A><BR>
+    <I>Fri Feb  8 14:51:11 CET 2008</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi, And as first poster, let me inaugurate this list:
+
+Frist Proust!!!
+
+And now to business: I just downloaded openviewer and then had the 
+following conversation on IRC. Reposting here for posterity:
+
+	&lt;shomon&gt;	hi there, any help available with running on ubuntu feisty? I 
+downloaded from svn, prebuilt, nanted and copied the example ini file in 
+the bin directory...
+	but the question is - does it connect to a standalone opensim by 
+default? It's pointing at the right place, but gives a 
+nullreferenceexception
+	&lt;nebadon&gt;	there is very little functionality at this point
+	&lt;shomon&gt;	hi nebadon - what's the best way to see the console client 
+working?
+	&lt;nebadon&gt;	at this point im not really sure to be honest
+	&lt;shomon&gt;	ah okay... oh well.. can I submit an error log with the 
+timeout error in it somewhere? if it helps
+	&lt;nebadon&gt;	hmm im not sure this project has its own mantis yet
+	but just leave any details you have here or also get on the mailing list
+	and send an email to the grounp
+	group
+	&lt;shomon&gt;	sure - well here's the main error it found: this is to a 
+vanilla opensim server install on feisty which is running happily on the 
+same box
+
+	** (./OpenViewer.exe:28132): WARNING **: Missing method 
+System.Net.WebHeaderCollection::Add(HttpRequestHeader,string) in 
+assembly /usr/lib/mono/gac/System/2.0.0.0__b77a5c561934e089/System.dll, 
+referenced in assembly 
+/home/ale/rpms/opensim/openviewer/trunk/bin/libsecondlife.dll
+DEBUG [Test User]: Resending packet #1 
+(libsecondlife.Packets.UseCircuitCodePacket), 4051ms have passed
+
+	and that debug line was repeated until it timed out and disconnected 
+with another error
+	2008-02-08 13:15:48,468 ERROR OpenViewer.Protocol.SecondLifeProtocol - 
+Login failed: Timed out
+
+Unhandled Exception: System.NullReferenceException: A null value was 
+found where an object instance was required.
+
+	I guess that's a separate error - gracefully handling timeouts
+	I'll post that to -users if that's the best place forit..
+
+Ok hope that helps, and if anyone's got past those errors and managed to 
+connect, please let me know!
+
+Ale
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/openviewer-users">More information about the Openviewer-users
+mailing list</a><br>
+</body></html>
